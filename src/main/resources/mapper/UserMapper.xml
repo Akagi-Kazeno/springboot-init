@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shimakaze.springbootinit.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.shimakaze.springbootinit.model.entity.User">
+        <id property="userId" column="user_id" jdbcType="VARCHAR"/>
+        <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+        <result property="userAccount" column="account" jdbcType="VARCHAR"/>
+        <result property="userAvatar" column="avatar" jdbcType="VARCHAR"/>
+        <result property="userRole" column="role" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP_WITH_TIMEZONE"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP_WITH_TIMEZONE"/>
+        <result property="lastLoginTime" column="last_login_time" jdbcType="TIMESTAMP_WITH_TIMEZONE"/>
+        <result property="lastLoginIp" column="last_login_ip" jdbcType="VARCHAR"/>
+        <result property="isDelete" column="is_delete" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        userId,userName,userAccount,userAvatar,userRole,createTime,updateTime,lastLoginTime,lastLoginIp,isDelete
+    </sql>
+</mapper>

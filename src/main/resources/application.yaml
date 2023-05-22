@@ -1,0 +1,81 @@
+spring:
+  application:
+    name: springboot-init
+  #  默认 dev 环境
+  profiles:
+    active: dev
+  #  支持swagger3
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  #  数据库配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/init?useSSL=true&useUnicode=true&characterEncoding=UTF-8&severTimeZone=Asia/Shanghai&currentSchema=init
+    username: postgres
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  #  文件上传大小及单次访问数据量限制
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+  #  redis配置
+  data:
+    redis:
+      #  redis数据库索引
+      database: 0
+      #  redis服务器地址
+      host: 127.0.0.1
+      #  redis服务器连接端口
+      port: 6379
+      #  redis服务器连接密码
+      password: 1234
+      lettuce:
+        pool:
+          # 连接池中的最小空闲连接 默认 0
+          min-idle: 2
+          # 连接池中的最大空闲连接 默认 8
+          max-idle: 10
+          # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
+          max-wait: 2000
+          # 连接池最大连接数（使用负值表示没有限制） 默认 8
+          max-active: -1
+server:
+  #  地址
+  address: 0.0.0.0
+  #  端口
+  port: 9099
+prop:
+  #  文件上传路径
+  upload-folder: /Users/shimakaze/Documents/upload/file/
+  #  头像图片上传路径
+  avatar-folder: /Users/shimakaze/Documents/upload/img/
+mybatis-plus:
+  type-aliases-package: com.shimakaze.model.entity
+  mapper-locations: classpath:mapper/*Mapper.xml
+  configuration:
+    #  关闭自动驼峰
+    #    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      #  全局逻辑删除的实体字段名
+      logic-delete-field: isDelete
+      #  逻辑已删除值(默认为1)
+      logic-delete-value: 1
+      #  逻辑未删除值(默认为0)
+      logic-not-delete-value: 0
+logging:
+  level:
+    com.shimakaze.springbootinit.mapper: debug
