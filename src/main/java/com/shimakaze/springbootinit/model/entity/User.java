@@ -52,12 +52,12 @@ public class User implements Serializable {
     /**
      * 创建时间
      */
-    @TableField(value = "create_time", fill = FieldFill.INSERT)
+    @TableField(value = "create_time")
     private OffsetDateTime createTime;
     /**
      * 更新时间
      */
-    @TableField(value = "update_time", fill = FieldFill.UPDATE)
+    @TableField(value = "update_time")
     private OffsetDateTime updateTime;
     /**
      * 上次登录时间
