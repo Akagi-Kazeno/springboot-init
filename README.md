@@ -1,5 +1,5 @@
 # SpringBoot-init
-这是一个springboot3.x的登录注册模板，后面会加更多功能(也许)，使用了postgresql+mybatis-plus+redis+jwt+spring aop，用于进行springboot项目的初始化。
+这是一个springboot3.x的登录注册模板，后面~~或许~~会加更多功能，使用了postgresql+mybatis-plus+redis+jwt+spring aop，用于进行springboot项目的初始化。
 
 ## 模块及功能
 

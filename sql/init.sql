@@ -12,7 +12,7 @@
  Target Server Version : 150002 (150002)
  File Encoding         : 65001
 
- Date: 22/05/2023 15:36:00
+ Date: 26/05/2023 14:51:14
 */
 
 
@@ -51,6 +51,8 @@ COMMENT ON COLUMN "init"."user"."is_delete" IS '是否删除(0:未删除;1:已�
 -- Records of user
 -- ----------------------------
 BEGIN;
+INSERT INTO "init"."user" ("user_id", "user_name", "account", "password", "avatar", "role", "create_time", "update_time", "last_login_time", "last_login_ip", "is_delete") VALUES ('0a3210f9604148c19526c418e04383cf', 'shimakaze', 'shimakaze', '3c09e4df28101b2412c7c695bb55f859', '/img/5b2d2c643c104d6babc26ff64f160011.png', 'admin', '2023-05-25 07:12:22.185478+00', '2023-05-26 02:27:05.35702+00', '2023-05-26 03:18:25.306544+00', '0:0:0:0:0:0:0:1', '0');
+INSERT INTO "init"."user" ("user_id", "user_name", "account", "password", "avatar", "role", "create_time", "update_time", "last_login_time", "last_login_ip", "is_delete") VALUES ('25128e3c32e04ca3a2dd51224ccea5a0', 'yukikaze', 'yukikaze', '1209ff79f09c2f3b8ab7c5ad29533eaf', '/img/5b2d2c643c104d6babc26ff64f160011.png', 'user', '2023-05-26 03:14:56.384382+00', '2023-05-26 03:19:43.082008+00', '2023-05-26 03:19:09.91185+00', '0:0:0:0:0:0:0:1', '0');
 COMMIT;
 
 -- ----------------------------
