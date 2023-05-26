@@ -129,9 +129,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         }
         // 更新用户登录时间,ip
         OffsetDateTime lastLoginTime = OffsetDateTime.now();
-        String loginIp = getIpAddress(getRequest());
+        String lastLoginIp = getIpAddress(getRequest());
         user.setLastLoginTime(lastLoginTime);
-        user.setLastLoginIp(loginIp);
+        user.setLastLoginIp(lastLoginIp);
         userMapper.updateById(user);
         // 获取token
         Jedis jedis = RedisDS.create().getJedis();

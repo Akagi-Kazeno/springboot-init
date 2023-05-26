@@ -27,6 +27,12 @@ public class UserController {
     @Resource
     private UserService userService;
 
+    /**
+     * 用户注册
+     *
+     * @param userRegisterRequest
+     * @return
+     */
     @PostMapping("/register")
     public BaseResponse<String> userRegister(@RequestBody UserRegisterRequest userRegisterRequest) {
         if (userRegisterRequest == null) {
@@ -43,6 +49,12 @@ public class UserController {
         return ResultUtils.success(userId);
     }
 
+    /**
+     * 用户登录
+     *
+     * @param userLoginRequest
+     * @return
+     */
     @PostMapping("/login")
     public BaseResponse<Object> userLogin(@RequestBody UserLoginRequest userLoginRequest) {
         if (userLoginRequest == null) {
@@ -57,17 +69,33 @@ public class UserController {
         return ResultUtils.success(token);
     }
 
+    /**
+     * 用户登出
+     *
+     * @return
+     */
     @PostMapping("/logout")
     public BaseResponse<Boolean> userLogout() {
         boolean logout = userService.userLogout();
         return ResultUtils.success(logout);
     }
 
+    /**
+     * 获取登录用户脱敏信息
+     *
+     * @return
+     */
     @GetMapping("/get/login")
     public BaseResponse<UserVO> getLoginUserVO() {
         return ResultUtils.success(userService.getLoginUserVO());
     }
 
+    /**
+     * 更新用户头像
+     *
+     * @param userUpdateAvatarRequest
+     * @return
+     */
     @PostMapping("/update/avatar")
     public BaseResponse<Boolean> updateAvatar(@RequestBody UserUpdateAvatarRequest userUpdateAvatarRequest) {
         if (userUpdateAvatarRequest == null) {
@@ -78,6 +106,12 @@ public class UserController {
         return ResultUtils.success(updateAvatar);
     }
 
+    /**
+     * 更新用户名
+     *
+     * @param userUpdateUserNameRequest
+     * @return
+     */
     @PostMapping("/update/username")
     public BaseResponse<Boolean> updateUsername(@RequestBody UserUpdateUserNameRequest userUpdateUserNameRequest) {
         if (userUpdateUserNameRequest == null) {
@@ -88,6 +122,12 @@ public class UserController {
         return ResultUtils.success(updateUsername);
     }
 
+    /**
+     * 根据id获取用户
+     *
+     * @param userId
+     * @return
+     */
     @GetMapping("/get/id")
     @AuthCheck(mustRole = ADMIN_ROLE)
     public BaseResponse<User> getUserById(String userId) {
@@ -99,6 +139,12 @@ public class UserController {
         return ResultUtils.success(user);
     }
 
+    /**
+     * 根据id获取用户脱敏信息
+     *
+     * @param userId
+     * @return
+     */
     @GetMapping("/get/vo")
     @AuthCheck(mustRole = ADMIN_ROLE)
     public BaseResponse<UserVO> getUserVOById(String userId) {
@@ -107,6 +153,12 @@ public class UserController {
         return ResultUtils.success(userService.getUserVO(user));
     }
 
+    /**
+     * 分页查询用户
+     *
+     * @param userQueryRequest
+     * @return
+     */
     @PostMapping("/list/page")
     @AuthCheck(mustRole = ADMIN_ROLE)
     public BaseResponse<Page<User>> listUserByPage(@RequestBody UserQueryRequest userQueryRequest) {
@@ -116,7 +168,13 @@ public class UserController {
         return ResultUtils.success(userPage);
     }
 
-    @PostMapping("/list/page/vo")
+    /**
+     * 分页查询用户脱敏信息
+     *
+     * @param userQueryRequest
+     * @return
+     */
+    @PostMapping("/page/vo")
     public BaseResponse<Page<UserVO>> listUserVOByPage(@RequestBody UserQueryRequest userQueryRequest) {
         if (userQueryRequest == null) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
