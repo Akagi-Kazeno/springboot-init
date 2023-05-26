@@ -10,12 +10,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.shimakaze.springbootinit.common.ErrorCode;
 import com.shimakaze.springbootinit.exception.BusinessException;
 import com.shimakaze.springbootinit.model.entity.User;
-import com.shimakaze.springbootinit.model.vo.UserVO;
 import com.shimakaze.springbootinit.utils.JwtUtils;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.BeanUtils;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
@@ -52,9 +50,7 @@ public class JwtInterceptor implements HandlerInterceptor {
             String userId = verify.getClaim("userId").asString();
             try (Jedis jedis = RedisDS.create().getJedis()) {
                 User user = JSON.parseObject(jedis.get("token: " + userId), User.class);
-                UserVO userVO = new UserVO();
-                BeanUtils.copyProperties(user, userVO);
-                request.setAttribute("user", userVO);
+                request.setAttribute("user", user);
                 return true;
             }
         } catch (SignatureVerificationException e) {
