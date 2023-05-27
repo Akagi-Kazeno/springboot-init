@@ -101,9 +101,9 @@ URL: http://localhost:9099/user/logout
 
 ***请求头:***
 
-| Key | Value | Description |
-| --- | ------|-------------|
-| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTkwMjcwMX0.pQNFqnCOfyu2oUEjXBgChbHr0QTDFPHa9ROkHlaUKaI | token |
+| Key           | Value                                                                                                                                                                | Description |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTkwMjcwMX0.pQNFqnCOfyu2oUEjXBgChbHr0QTDFPHa9ROkHlaUKaI | token       |
 
 ***返回示例:***
 
@@ -129,9 +129,9 @@ URL: http://localhost:9099/user/page/vo
 
 ***请求头:***
 
-| Key | Value | Description |
-| --- | ------|-------------|
-| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTk2ODk5NX0.HLBXoax1gOM_17S7Aujho4bCh2EGSpb0hcMRzg1E3SI | token |
+| Key           | Value                                                                                                                                                                | Description |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTk2ODk5NX0.HLBXoax1gOM_17S7Aujho4bCh2EGSpb0hcMRzg1E3SI | token       |
 
 ***请求体:***
 
@@ -199,15 +199,15 @@ URL: http://localhost:9099/upload/avatar
 
 ***请求头:***
 
-| Key | Value | Description |
-| --- | ------|-------------|
-| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTkwMjcwMX0.pQNFqnCOfyu2oUEjXBgChbHr0QTDFPHa9ROkHlaUKaI | token |
+| Key           | Value                                                                                                                                                                | Description |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTkwMjcwMX0.pQNFqnCOfyu2oUEjXBgChbHr0QTDFPHa9ROkHlaUKaI | token       |
 
 ***请求体:***
 
-| Key | Value | Description |
-| --- | ------|-------------|
-| file | 5b2d2c643c104d6babc26ff64f160011.png | 图片 |
+| Key  | Value                                | Description |
+|------|--------------------------------------|-------------|
+| file | 5b2d2c643c104d6babc26ff64f160011.png | 图片          |
 
 ***返回示例:***
 
@@ -235,9 +235,9 @@ URL: http://localhost:9099/user/update/avatar
 
 ***请求头:***
 
-| Key | Value | Description |
-| --- | ------|-------------|
-| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTkwMjcwMX0.pQNFqnCOfyu2oUEjXBgChbHr0QTDFPHa9ROkHlaUKaI | token |
+| Key           | Value                                                                                                                                                                | Description |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTkwMjcwMX0.pQNFqnCOfyu2oUEjXBgChbHr0QTDFPHa9ROkHlaUKaI | token       |
 
 ***请求体:***
 
@@ -271,9 +271,9 @@ URL: http://localhost:9099/user/update/username
 
 ***请求头:***
 
-| Key | Value | Description |
-| --- | ------|-------------|
-| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTkwMjcwMX0.pQNFqnCOfyu2oUEjXBgChbHr0QTDFPHa9ROkHlaUKaI | token |
+| Key           | Value                                                                                                                                                                | Description |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTkwMjcwMX0.pQNFqnCOfyu2oUEjXBgChbHr0QTDFPHa9ROkHlaUKaI | token       |
 
 ***请求体:***
 
@@ -307,9 +307,9 @@ URL: http://localhost:9099/user/get/login
 
 ***请求头:***
 
-| Key | Value | Description |
-| --- | ------|-------------|
-| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTkwMjcwMX0.pQNFqnCOfyu2oUEjXBgChbHr0QTDFPHa9ROkHlaUKaI | token |
+| Key           | Value                                                                                                                                                                | Description |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTkwMjcwMX0.pQNFqnCOfyu2oUEjXBgChbHr0QTDFPHa9ROkHlaUKaI | token       |
 
 ***返回示例:***
 
@@ -347,15 +347,15 @@ URL: http://localhost:9099/user/get/id
 
 ***请求头:***
 
-| Key | Value | Description |
-| --- | ------|-------------|
-| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTkwMjcwMX0.pQNFqnCOfyu2oUEjXBgChbHr0QTDFPHa9ROkHlaUKaI | token |
+| Key           | Value                                                                                                                                                                | Description |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTkwMjcwMX0.pQNFqnCOfyu2oUEjXBgChbHr0QTDFPHa9ROkHlaUKaI | token       |
 
 ***请求体:***
 
-| Key | Value | Description |
-| --- | ------|-------------|
-| userId | 0a3210f9604148c19526c418e04383cf | 用户ID |
+| Key    | Value                            | Description |
+|--------|----------------------------------|-------------|
+| userId | 0a3210f9604148c19526c418e04383cf | 用户ID        |
 
 ***返回示例:***
 
@@ -392,15 +392,15 @@ URL: http://localhost:9099/user/get/vo
 
 ***请求头:***
 
-| Key | Value | Description |
-| --- | ------|-------------|
-| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTk2ODk5NX0.HLBXoax1gOM_17S7Aujho4bCh2EGSpb0hcMRzg1E3SI | token |
+| Key           | Value                                                                                                                                                                | Description |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTk2ODk5NX0.HLBXoax1gOM_17S7Aujho4bCh2EGSpb0hcMRzg1E3SI | token       |
 
 ***请求体:***
 
-| Key | Value | Description |
-| --- | ------|-------------|
-| userId | 0a3210f9604148c19526c418e04383cf | 用户ID |
+| Key    | Value                            | Description |
+|--------|----------------------------------|-------------|
+| userId | 0a3210f9604148c19526c418e04383cf | 用户ID        |
 
 ***返回示例:***
 
@@ -436,9 +436,9 @@ URL: http://localhost:9099/user/list/page
 
 ***请求头:***
 
-| Key | Value | Description |
-| --- | ------|-------------|
-| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTk2ODk5NX0.HLBXoax1gOM_17S7Aujho4bCh2EGSpb0hcMRzg1E3SI | token |
+| Key           | Value                                                                                                                                                                | Description |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Authorization | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYTMyMTBmOTYwNDE0OGMxOTUyNmM0MThlMDQzODNjZiIsImV4cCI6MTY4NTk2ODk5NX0.HLBXoax1gOM_17S7Aujho4bCh2EGSpb0hcMRzg1E3SI | token       |
 
 ***请求体:***
 
