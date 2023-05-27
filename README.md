@@ -5,17 +5,17 @@
 
 * [user](#user)
     1. [login](#1-login)
-    1. [register](#2-register)
-    1. [logout](#3-logout)
-    1. [page user vo](#4-page-user-vo)
-    1. [upload avatar](#5-upload-avatar)
-    1. [update user avatar](#6-update-user-avatar)
-    1. [update username](#7-update-username)
-    1. [get login](#8-get-login)
+    2. [register](#2-register)
+    3. [logout](#3-logout)
+    4. [page user vo](#4-page-user-vo)
+    5. [upload avatar](#5-upload-avatar)
+    6. [update user avatar](#6-update-user-avatar)
+    7. [update username](#7-update-username)
+    8. [get login](#8-get-login)
 * [admin](#admin)
     1. [get user by id](#1-get-user-by-id)
-    1. [get userVO by id](#2-get-uservo-by-id)
-    1. [list user page](#3-list-user-page)
+    2. [get userVO by id](#2-get-uservo-by-id)
+    3. [list user page](#3-list-user-page)
 
 --------
 
