@@ -7,7 +7,7 @@ import org.apache.commons.lang3.StringUtils;
  */
 public class SqlUtils {
     /**
-     * 校验排序字段是否合法（防止 SQL 注入）
+     * 校验排序字段是否合法(防止 SQL 注入)
      *
      * @param sortField
      * @return

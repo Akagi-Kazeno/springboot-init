@@ -79,11 +79,10 @@ public class UploadController {
      * 文件上传
      *
      * @param files   文件
-     * @param request 请求
      * @return 文件路径
      */
     @PostMapping("/files")
-    public BaseResponse<List<Object>> files(@RequestPart MultipartFile[] files, HttpServletRequest request) {
+    public BaseResponse<List<Object>> files(@RequestPart MultipartFile[] files) {
         if (files == null) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR, "请选择要上传的文件");
         }

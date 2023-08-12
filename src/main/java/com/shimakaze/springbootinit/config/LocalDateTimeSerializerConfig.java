@@ -35,7 +35,7 @@ public class LocalDateTimeSerializerConfig {
         return new Converter<String, LocalDate>() {
             @Override
             public LocalDate convert(@NonNull String source) {
-                if (source.trim().length() == 0)
+                if (source.trim().isEmpty())
                     return null;
                 try {
                     return LocalDate.parse(source);
@@ -56,7 +56,7 @@ public class LocalDateTimeSerializerConfig {
         return new Converter<String, LocalDateTime>() {
             @Override
             public LocalDateTime convert(@NonNull String source) {
-                if (source.trim().length() == 0)
+                if (source.trim().isEmpty())
                     return null;
                 try {
                     return LocalDateTime.parse(source);

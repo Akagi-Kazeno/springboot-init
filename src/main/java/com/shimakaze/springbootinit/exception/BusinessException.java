@@ -1,10 +1,12 @@
 package com.shimakaze.springbootinit.exception;
 
 import com.shimakaze.springbootinit.common.ErrorCode;
+import lombok.Getter;
 
 /**
  * 自定义异常类
  */
+@Getter
 public class BusinessException extends RuntimeException {
     private final Integer code;
 
@@ -23,7 +25,4 @@ public class BusinessException extends RuntimeException {
         this.code = errorCode.getCode();
     }
 
-    public Integer getCode() {
-        return code;
-    }
 }
